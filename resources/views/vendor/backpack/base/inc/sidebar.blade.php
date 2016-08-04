@@ -20,11 +20,21 @@
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
           <li><a href="{{ url('admin/dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
-          <li><a href="#">Pages</a>
 
-             <li><a href="">About</a></li>
+          <li><a href="{{ url('admin/posts') }}"><i class="fa fa-wrench fa-fw"></i> <span>All Posts</span><span class="fa arrow"></span></a>
+             <ul class="nav nav-second-level">
+                <li>
+                   <a href="{{ url('admin/posts/create') }}">Create Post</a>
+                </li>
+                <li></li>
+                <li></li>
+             </ul>
 
           </li>
+
+
+
+
 
 
           <!-- ======================================= -->

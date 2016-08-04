@@ -13949,7 +13949,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
 
-   template: '\n   <div>\n   <canvas width="800" height="600" v-el:canvas></canvas>\n   {{{ legend }}}\n   </div>\n   ',
+   template: '\n   <div>\n   <canvas width="800" height="600" v-el:canvasNox></canvas>\n   {{{ legend }}}\n   </div>\n   ',
 
    props: ['player', 'opponent'],
 
