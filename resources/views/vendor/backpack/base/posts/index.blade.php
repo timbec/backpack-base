@@ -26,12 +26,13 @@
                <td><img height="50" src="{{ $post->photo ? $post->photo->file : 'http://placeholder.it' }}" alt=""</td>
                <td>{{ $post->id }}</td>
                <td>{{ $post->user->name }}</td>
-               <td>{{ $post->category_id }}</td>
+               <td>{{ $post->category ? $post->category->name : 'Uncategorized'}}</td>
                <td>{{ $post->title }}</td>
                <td>{{ $post->excerpt }}</td>
-               <td>{{ $post->body }}</td>
+               <td>{{ str_limit($post->body, 25) }}</td>
                <td>{{ $post->created_at->diffForhumans() }}</td>
                <td>{{ $post->updated_at->diffForhumans() }}</td>
+               <td><a class="btn btn-primary" href="{{ route('admin.posts.edit', $post->id) }}">Edit</a></td>
             </tr>
             @endforeach
          @endif

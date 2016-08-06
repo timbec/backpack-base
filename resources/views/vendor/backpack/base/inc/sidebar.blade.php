@@ -26,9 +26,11 @@
                 <li>
                    <a href="{{ url('admin/posts/create') }}">Create Post</a>
                 </li>
-                <li></li>
-                <li></li>
              </ul>
+
+          </li>
+
+          <li><a href="{{ url('admin/categories') }}"><i class="fa fa-wrench fa-fw"></i> <span>All Categories</span><span class="fa arrow"></span></a>
 
           </li>
 
