@@ -6,7 +6,7 @@
 
  <div class="row">
     <div class="col-sm-3">
-      <img src="{{ $post->photo->file }}" alt="" class="img-responsive">
+      <img src="{{ $post->photo ? $post->photo->file : 'http://placeholder.it' }}" alt="" class="img-responsive">
     </div>
 
     {!! Form::model($post, ['method'=>'PATCH','action'=>['AdminControllers\PostsController@update', $post->id], 'files'=>true]) !!}

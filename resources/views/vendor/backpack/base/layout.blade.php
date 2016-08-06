@@ -69,7 +69,7 @@
 
           @include('backpack::inc.menu')
         </nav>
-      </header>
+     </header>
 
       <!-- =============================================== -->
 
@@ -144,5 +144,6 @@
 
     <!-- JavaScripts -->
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    @yeild('scripts')
 </body>
 </html>

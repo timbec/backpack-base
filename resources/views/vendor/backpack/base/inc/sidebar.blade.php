@@ -34,6 +34,15 @@
 
           </li>
 
+          <li><a href="{{ url('admin/media') }}"><i class="fa fa-wrench fa-fw"></i> <span>All Media</span><span class="fa arrow"></span></a>
+             <ul class="nav nav-second-level">
+                <li>
+                   <a href="{{ url('admin/media/create') }}"><i class="fa fa-wrench fa-fw"></i> <span>Upload Media</span><span class="fa arrow"></span></a>
+                </li>
+             </ul>
+
+          </li>
+
 
 
 
